@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.seenukarthi</groupId>
+    <artifactId>spring-mvc-parent</artifactId>
+    <version>1.0.0</version>
+  </parent>
+  <artifactId>springmvc-webapp</artifactId>
+  <packaging>war</packaging>
+  <name>Spring MVC Webapp</name>
+  <dependencies>
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>${spring.framework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-expression</artifactId>
+		<version>${spring.framework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.framework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-lang</groupId>
+		<artifactId>commons-lang</artifactId>
+		<version>2.6-redhat-2</version>
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+		<groupId>com.seenukarthi</groupId>
+		<artifactId>springmvc-to</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>springmvc-webapp</finalName>
+  </build>
+</project>
